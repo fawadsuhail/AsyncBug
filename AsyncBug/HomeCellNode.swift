@@ -19,7 +19,7 @@ class HomeCellNode: ASCellNode {
         return
       }
       
-      let params = [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 18.0),
+      let params = [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 24.0),
                     NSForegroundColorAttributeName : UIColor.black]
       
       let attributedString = NSAttributedString(string: titleText, attributes: params)

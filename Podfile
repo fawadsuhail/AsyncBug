@@ -6,5 +6,6 @@ target 'AsyncBug' do
   use_frameworks!
 
   # Pods for AsyncBug
-pod 'AsyncDisplayKit', '2.0'
+  # pod 'AsyncDisplayKit', '2.0' # works fine
+  pod 'AsyncDisplayKit', '2.1' # buggy
 end

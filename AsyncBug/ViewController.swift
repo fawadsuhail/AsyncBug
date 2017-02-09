@@ -14,7 +14,7 @@ class ViewController: UIViewController {
   
   var collectionNode: ASCollectionNode!
   let flowLayout = UICollectionViewFlowLayout()
-  var scrollIndex = 0 // 
+  var scrollIndex = 0 // used to set the scrollOffset on rotation
   
   override func loadView() {
     
