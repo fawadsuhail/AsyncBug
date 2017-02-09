@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		6DD30DD91E4D090700CCED41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD30DD81E4D090700CCED41 /* AppDelegate.swift */; };
 		6DD30DDB1E4D090700CCED41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD30DDA1E4D090700CCED41 /* ViewController.swift */; };
-		6DD30DDE1E4D090700CCED41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD30DDC1E4D090700CCED41 /* Main.storyboard */; };
 		6DD30DE01E4D090700CCED41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD30DDF1E4D090700CCED41 /* Assets.xcassets */; };
 		6DD30DE31E4D090700CCED41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD30DE11E4D090700CCED41 /* LaunchScreen.storyboard */; };
+		6DD30DEB1E4D0BA000CCED41 /* HomeCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD30DEA1E4D0BA000CCED41 /* HomeCellNode.swift */; };
 		D48E7BB56CC53339BCBF070B /* Pods_AsyncBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06865197A388DF5B2A9752 /* Pods_AsyncBug.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,10 +20,10 @@
 		6DD30DD51E4D090700CCED41 /* AsyncBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD30DD81E4D090700CCED41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DD30DDA1E4D090700CCED41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6DD30DDD1E4D090700CCED41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DD30DDF1E4D090700CCED41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DD30DE21E4D090700CCED41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DD30DE41E4D090700CCED41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD30DEA1E4D0BA000CCED41 /* HomeCellNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCellNode.swift; sourceTree = "<group>"; };
 		891565295F0E06822B87289D /* Pods-AsyncBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncBug.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncBug/Pods-AsyncBug.release.xcconfig"; sourceTree = "<group>"; };
 		9A06865197A388DF5B2A9752 /* Pods_AsyncBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 			children = (
 				6DD30DD81E4D090700CCED41 /* AppDelegate.swift */,
 				6DD30DDA1E4D090700CCED41 /* ViewController.swift */,
-				6DD30DDC1E4D090700CCED41 /* Main.storyboard */,
+				6DD30DEA1E4D0BA000CCED41 /* HomeCellNode.swift */,
 				6DD30DDF1E4D090700CCED41 /* Assets.xcassets */,
 				6DD30DE11E4D090700CCED41 /* LaunchScreen.storyboard */,
 				6DD30DE41E4D090700CCED41 /* Info.plist */,
@@ -152,7 +152,6 @@
 			files = (
 				6DD30DE31E4D090700CCED41 /* LaunchScreen.storyboard in Resources */,
 				6DD30DE01E4D090700CCED41 /* Assets.xcassets in Resources */,
-				6DD30DDE1E4D090700CCED41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD30DDB1E4D090700CCED41 /* ViewController.swift in Sources */,
+				6DD30DEB1E4D0BA000CCED41 /* HomeCellNode.swift in Sources */,
 				6DD30DD91E4D090700CCED41 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6DD30DDC1E4D090700CCED41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DD30DDD1E4D090700CCED41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6DD30DE11E4D090700CCED41 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -378,6 +370,7 @@
 				6DD30DE91E4D090700CCED41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
